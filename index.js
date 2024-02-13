@@ -23,7 +23,7 @@ const server = http.createServer(function(request, response) {
     var html = `
             <html>
                 <body>
-                    <form method="post" action="http://localhost:3000">Numbers: 
+                    <!-- <form method="post" action="http://localhost:3000">Numbers: --> 
                         <input type="text" name="numbers" />
                         <input type="submit" value="Add" />
                     </form>
@@ -36,5 +36,6 @@ const server = http.createServer(function(request, response) {
 
 const port = 3000
 const host = '127.0.0.1'
-server.listen(port, host)
+//server.listen(port, host)
+server.listen(port)
 console.log(`Listening at http://${host}:${port}`)
